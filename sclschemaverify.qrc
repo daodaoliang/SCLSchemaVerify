@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/schema1">
+        <file alias="MICS">Resources/schema_1/MICS.xsd</file>
+        <file alias="SCL">Resources/schema_1/SCL.xsd</file>
+        <file alias="SCL_BaseSimpleTypes">Resources/schema_1/SCL_BaseSimpleTypes.xsd</file>
+        <file alias="SCL_BaseTypes">Resources/schema_1/SCL_BaseTypes.xsd</file>
+        <file alias="SCL_Communication">Resources/schema_1/SCL_Communication.xsd</file>
+        <file alias="SCL_DataTypeTemplates">Resources/schema_1/SCL_DataTypeTemplates.xsd</file>
+        <file alias="SCL_Enums">Resources/schema_1/SCL_Enums.xsd</file>
+        <file alias="SCL_IED">Resources/schema_1/SCL_IED.xsd</file>
+        <file alias="SCL_Substation">Resources/schema_1/SCL_Substation.xsd</file>
+    </qresource>
+    <qresource prefix="/schema2">
+        <file alias="SCL">Resources/schema_2/SCL.xsd</file>
+        <file alias="SCL_BaseSimpleTypes">Resources/schema_2/SCL_BaseSimpleTypes.xsd</file>
+        <file alias="SCL_BaseTypes">Resources/schema_2/SCL_BaseTypes.xsd</file>
+        <file alias="SCL_Communication">Resources/schema_2/SCL_Communication.xsd</file>
+        <file alias="SCL_Coordinates">Resources/schema_2/SCL_Coordinates.xsd</file>
+        <file alias="SCL_DataTypeTemplates">Resources/schema_2/SCL_DataTypeTemplates.xsd</file>
+        <file alias="SCL_Enums">Resources/schema_2/SCL_Enums.xsd</file>
+        <file alias="SCL_IED">Resources/schema_2/SCL_IED.xsd</file>
+        <file alias="SCL_Maintenance">Resources/schema_2/SCL_Maintenance.xsd</file>
+        <file alias="SCL_Substation">Resources/schema_2/SCL_Substation.xsd</file>
+        <file alias="SCLvariants">Resources/schema_2/SCLvariants.xsd</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file alias="doc_new">Resources/images/doc_new.png</file>
+        <file alias="version">Resources/images/version.png</file>
+        <file alias="play">Resources/images/play.png</file>
+        <file alias="doc_edit">Resources/images/doc_edit.png</file>
+    </qresource>
+    <qresource prefix="/file">
+        <file alias="exportTemplate">Resources/exportTemplate.html</file>
+    </qresource>
+</RCC>

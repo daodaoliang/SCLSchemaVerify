@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SCLSchemaVerifyClass</class>
+ <widget class="QMainWindow" name="SCLSchemaVerifyClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>901</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SCL Schema校验</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>选择Schmea基准文件：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_schema1">
+        <property name="text">
+         <string>标准Schema 1.0版本</string>
+        </property>
+        <property name="icon">
+         <iconset resource="sclschemaverify.qrc">
+          <normaloff>:/images/version</normaloff>:/images/version</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_schema2">
+        <property name="text">
+         <string>标准Schema 2.0版本</string>
+        </property>
+        <property name="icon">
+         <iconset resource="sclschemaverify.qrc">
+          <normaloff>:/images/version</normaloff>:/images/version</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QRadioButton" name="radioButton_schema">
+          <property name="text">
+           <string>自定义Schema版本文件</string>
+          </property>
+          <property name="icon">
+           <iconset resource="sclschemaverify.qrc">
+            <normaloff>:/images/version</normaloff>:/images/version</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnSelectSchema">
+          <property name="text">
+           <string>选择Schema文件...(&amp;H)</string>
+          </property>
+          <property name="icon">
+           <iconset resource="sclschemaverify.qrc">
+            <normaloff>:/images/doc_new</normaloff>:/images/doc_new</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>选择待校验的SCL文件：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_scl"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSelectScl">
+        <property name="text">
+         <string>选择SCL文件...(&amp;L)</string>
+        </property>
+        <property name="icon">
+         <iconset resource="sclschemaverify.qrc">
+          <normaloff>:/images/doc_new</normaloff>:/images/doc_new</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnSchemaVerify">
+        <property name="text">
+         <string>开始Schema语法校验(&amp;V)</string>
+        </property>
+        <property name="icon">
+         <iconset resource="sclschemaverify.qrc">
+          <normaloff>:/images/play</normaloff>:/images/play</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <widget class="QProgressBar" name="progressBar">
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPlainTextEdit" name="plainTextEdit"/>
+    </item>
+    <item row="4" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnExport">
+        <property name="text">
+         <string>校验信息导出...(&amp;E)</string>
+        </property>
+        <property name="icon">
+         <iconset resource="sclschemaverify.qrc">
+          <normaloff>:/images/doc_edit</normaloff>:/images/doc_edit</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+   <zorder>plainTextEdit</zorder>
+   <zorder>progressBar</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="sclschemaverify.qrc"/>
+  <include location="../../OperationSystem/UK-9000/HMI_Plugin/oe/plugin_scl_verify/plugin_scl_verify.qrc"/>
+ </resources>
+ <connections/>
+</ui>
