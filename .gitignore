@@ -15,3 +15,4 @@ ui_*.h
 qrc_*.cpp
 Win32/Debug/SCLSchemaVerify.exe
 Win32/Release/SCLSchemaVerify.exe
+*.suo
